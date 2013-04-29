@@ -49,19 +49,19 @@ So far, all of the given assignments use text files as input, and hence you use 
  
 ### Step 1 (Create the Datasets)
 Assume we have a customer dataset, where each record is stored as follows:      
-    {    Customer ID: <id>, 
-         Name: <name>, 
-         Address: <addr>, 
-         Salary: <salary>, 
-         Gender: <gender>   
-    }, 
-    {    Customer ID: <id>, 
-         Name: <name>, 
-         Address: <addr>, 
-         Salary: <salary>, 
-         Gender: <gender>   
-    }, 
-    …. 
+    {    Customer ID: <id>,      
+         Name: <name>,     
+         Address: <addr>,    
+         Salary: <salary>,     
+         Gender: <gender>      
+    },     
+    {    Customer ID: <id>,     
+         Name: <name>,     
+         Address: <addr>,    
+         Salary: <salary>,    
+         Gender: <gender>      
+    },     
+    ….     
 • In this step, you are required to create a customer dataset with the above format.     
 •	Scale it to be at least 100MBs     
 •	Make sure within a single record, there is no “{“ or “}”. These brackets should identify the start and end of each record.     
