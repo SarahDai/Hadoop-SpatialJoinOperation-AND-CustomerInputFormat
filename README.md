@@ -36,9 +36,9 @@ For example, the join between the two datasets shown in Figure 1, will result in
 In this step, you will write a java map-­‐reduce job that implement the spatial join operation between the two datasets P and R based on the following requirements:     
 •	The program takes an optional input parameter W(x1, y1, x2, y2) that indicate a spatial window (rectangle) of interest within which we want to report the joined objects. If W is omitted, then the entire two sets should be joined.     
 o	Example, referring to Figure 1, if the window parameter is W(1, 3, 3, 20), then the reported joined objects should be:     
-    <r1, (3,15)> 
-    <r2, (2,4)> 
-    <r3, (2,4)> 
+     <r1, (3,15)> 
+     <r2, (2,4)> 
+     <r3, (2,4)> 
  
  
 •	You should have a single map-­‐reduce job to implement the spatial join operation.    
@@ -49,19 +49,19 @@ So far, all of the given assignments use text files as input, and hence you use 
  
 ### Step 1 (Create the Datasets)
 Assume we have a customer dataset, where each record is stored as follows:      
-    {    Customer ID: <id>,      
-         Name: <name>,     
-         Address: <addr>,    
-         Salary: <salary>,     
-         Gender: <gender>      
-    },     
-    {    Customer ID: <id>,     
-         Name: <name>,     
-         Address: <addr>,    
-         Salary: <salary>,    
-         Gender: <gender>      
-    },     
-    ….     
+     {    Customer ID: <id>,      
+          Name: <name>,     
+          Address: <addr>,    
+          Salary: <salary>,     
+          Gender: <gender>      
+     },     
+     {    Customer ID: <id>,     
+          Name: <name>,     
+          Address: <addr>,    
+          Salary: <salary>,    
+          Gender: <gender>      
+     },     
+     ….     
 • In this step, you are required to create a customer dataset with the above format.     
 •	Scale it to be at least 100MBs     
 •	Make sure within a single record, there is no “{“ or “}”. These brackets should identify the start and end of each record.     
